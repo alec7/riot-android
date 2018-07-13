@@ -33,7 +33,7 @@ import java.util.TimerTask;
 
 /**
  * Markdown parser.
- * This class uses a webview.
+ * This class uses a WebView.
  */
 public class VectorMarkdownParser extends WebView {
     private static final String LOG_TAG = VectorMarkdownParser.class.getSimpleName();
@@ -46,9 +46,9 @@ public class VectorMarkdownParser extends WebView {
          * A markdown text has been parsed.
          *
          * @param text     the text to parse.
-         * @param HTMLText the parsed text
+         * @param htmlText the parsed text
          */
-        void onMarkdownParsed(String text, String HTMLText);
+        void onMarkdownParsed(String text, String htmlText);
     }
 
     /**
