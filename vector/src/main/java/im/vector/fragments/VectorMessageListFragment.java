@@ -1040,7 +1040,7 @@ public class VectorMessageListFragment extends MatrixMessageListFragment impleme
             MessageRow row = mAdapter.getItem(position);
             Event event = row.getEvent();
 
-            // switch in section mode
+            // toggle selection mode
             ((VectorMessagesAdapter) mAdapter).onEventTap(event);
         } catch (Exception e) {
             Log.e(LOG_TAG, "## onRowClick() failed " + e.getMessage(), e);
@@ -1086,7 +1086,7 @@ public class VectorMessageListFragment extends MatrixMessageListFragment impleme
                     onMediaAction(ACTION_VECTOR_OPEN, fileMessage.getUrl(), fileMessage.getMimeType(), fileMessage.body, fileMessage.file);
                 }
             } else {
-                // switch in section mode
+                // toggle selection mode
                 vectorMessagesAdapter.onEventTap(event);
             }
         } catch (Exception e) {
